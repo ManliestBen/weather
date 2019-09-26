@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { directive } from "@babel/types";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react';
+import Titles from '../src/components/titles';
+import Form from '../src/components/form';
+import Weather from '../src/components/weather';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Titles />
+        <Form />
+        <Weather />
+      </div>
+    )
+  }
 }
 
 export default App;
